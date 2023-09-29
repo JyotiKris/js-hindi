@@ -37,4 +37,28 @@ const myfunction = function() {   // datatype = function // has to be object fun
 console.log(typeof myfunction);
 
 // link to study :
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+// https://262.ecma-international.org/5.1/#sec-11.4.3 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive) 
+// Stack = will get the copy // Heap = will get the reference  
+
+let myYoutubename = "jyotiYoutube"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename); //chaicaurcode
+console.log(anothername); //chaicaurcode
+
+let userOne = {
+    email: "jp9348@gmail.com"
+    upi: "user@ybl" 
+}
+
+let userTwo = userOne 
+ userTwo.email = "jp344@gmail.com"
+
+ console.log(userOne.email); //jp344@gmail.com
+ console.log(userTwo.email); //jp344@gmail.com
